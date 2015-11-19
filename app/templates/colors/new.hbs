@@ -1,1 +1,9 @@
-{{outlet}}
+{{#link-to 'colors.index' class="button pull-right" }}Back to Palette{{/link-to}}
+<br>
+<div class="preview" style="background-color:{{hexcode}}"></div>
+
+<form>
+  {{input class="input" type="text" value=hexcode placeholder="HEXCODE"}}
+  {{input class="input" type="text" value=name placeholder="COLOR NAME"}}
+  {{input class="button" type="submit" value="SAVE"}}
+</form>
