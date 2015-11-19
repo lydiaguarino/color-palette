@@ -1,1 +1,5 @@
-{{outlet}}
+{{#link-to 'colors.new' class="button pull-right" }}Add a Color{{/link-to}}
+<br>
+{{#each model as |color|}}
+  <div class="color" style="background-color:{{color.hexcode}}"></div>
+{{/each}}
