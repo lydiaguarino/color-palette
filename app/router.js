@@ -8,7 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('colors', function() {
     this.route('new');
-    this.route('edit');
+    this.route('edit', { path: '/:color_id' });
   });
 });
 
