@@ -2,7 +2,7 @@
 <br>
 <div class="preview" style="background-color:{{hexcode}}"></div>
 
-<form>
+<form {{action "create" on="submit"}}>
   {{input class="input" type="text" value=hexcode placeholder="HEXCODE"}}
   {{input class="input" type="text" value=name placeholder="COLOR NAME"}}
   {{input class="button" type="submit" value="SAVE"}}
