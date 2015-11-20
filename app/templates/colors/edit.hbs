@@ -2,8 +2,9 @@
 <br>
 <div class="preview" style="background-color:{{model.hexcode}}"></div>
 
-<form>
+<form {{action "update" on="submit"}}>
   {{input class="input" type="text" value=model.hexcode placeholder="HEXCODE"}}
   {{input class="input" type="text" value=model.name placeholder="COLOR NAME"}}
   {{input class="button" type="submit" value="UPDATE"}}
+  <div class="button" {{action 'destroy'}}>DELETE</div>
 </form>
